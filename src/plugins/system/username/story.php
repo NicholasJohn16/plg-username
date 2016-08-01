@@ -1,8 +1,6 @@
-<?php 
+<?php
 
-jimport('joomla.plugin.plugin'); 
-
-class PlgSystemUsernameHelper extends ComActorsTemplateHelper 
+class PlgSystemUsernameHelperStory extends ComActorsTemplateHelperStory
 {
 	public function name($actor, $linked = true, $attr = array())
     {
@@ -25,5 +23,4 @@ class PlgSystemUsernameHelper extends ComActorsTemplateHelper
         $name = '<a class="actor-name" '.$this->_buildAttribute($attr).' actorid="'.$actor->id.'" href="'.$url.'" >'.$name.'</a>';
         return $name;
     }
-		
-} 
+}
