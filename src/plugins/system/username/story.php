@@ -1,6 +1,6 @@
 <?php
 
-class PlgSystemUsernameHelperStory extends ComActorsTemplateHelperStory
+class PlgSystemUsernameStory extends ComActorsTemplateHelperStory
 {
 	public function name($actor, $linked = true, $attr = array())
     {
