@@ -4,6 +4,10 @@ class PlgSystemUsernameStory extends ComActorsTemplateHelperStory
 {
 	public function name($actor, $linked = true, $attr = array())
     {
+		if(!is_person($actor)) {
+			return parent::name($actor, $linked, $attr);
+		}
+		
         if (is_null($actor) || !isset($actor->id)) {
             $linked = false;
             $name = '<span class="actor-name">'.JText::_('LIB-AN-UNKOWN-PERSON').'</span>';
