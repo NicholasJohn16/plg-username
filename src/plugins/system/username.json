@@ -1,0 +1,22 @@
+{
+    "name": "System - Username",
+    "description": "Overrides to display Username instead of Name",
+    "type": "plugin",
+    "group": "system",
+    "version": "1.0.0",
+    "license": "GPLv3",
+    "homepage": "http://nicholasjohn16.com",
+    "authors": [
+      {
+        "name": "Nick Swinford",
+        "email": "nick@nicholasjohn16.com",
+        "homepage": "http://nicholasjohn16.com"
+      }
+    ],
+    "copyright": [
+        "Copyright 2017 NicholasJohn16"
+    ],
+    "files": [
+        "username.php"
+    ]
+}

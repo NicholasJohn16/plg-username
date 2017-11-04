@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<install version="##BUILD_PLATFORM_VERSION##" type="plugin" group="system" method="upgrade">
-	<name>System - Username Plugin</name>
-	<author>Nick Swinford</author>
-	<description>Changes display of actor names to usernames.</description>
-	<files>
-		<filename plugin="username">username.php</filename>
-	</files>
-</install>

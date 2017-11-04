@@ -10,7 +10,7 @@ class PlgSystemUsernameStory extends ComActorsTemplateHelperStory
 		
         if (is_null($actor) || !isset($actor->id)) {
             $linked = false;
-            $name = '<span class="actor-name">'.JText::_('LIB-AN-UNKOWN-PERSON').'</span>';
+            $name = '<span class="actor-name">'.AnTranslator::_('LIB-AN-UNKOWN-PERSON').'</span>';
         } else {
             $name = '<span class="actor-name" actorid="'.$actor->id.'">'.$actor->username.'</span>';
             if($actor->verified){
@@ -20,11 +20,12 @@ class PlgSystemUsernameStory extends ComActorsTemplateHelperStory
         if (!$linked || !$actor->authorize('access')) {
             return (string) $name;
         }
-        $url = JRoute::_($actor->getURL());
+        $url = route($actor->getURL());
         if (is_person($actor)) {
             $attr['title'] = '@'.$actor->username;
         }
         $name = '<a class="actor-name" '.$this->_buildAttribute($attr).' actorid="'.$actor->id.'" href="'.$url.'" >'.$name.'</a>';
+		
         return $name;
     }
 }
