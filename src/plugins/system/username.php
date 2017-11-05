@@ -1,8 +1,6 @@
 <?php
 
-jimport('joomla.plugin.plugin'); 
-
-class plgSystemUsername extends JPlugin 
+class plgSystemUsername extends PlgAnahitaDefault 
 {
 	public function onAfterRoute() { 
 		//map the actor helper class to a custom class PlgSystemActorhelper 
