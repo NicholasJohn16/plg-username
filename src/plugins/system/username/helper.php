@@ -1,7 +1,5 @@
 <?php 
 
-jimport('joomla.plugin.plugin'); 
-
 class PlgSystemUsernameHelper extends ComActorsTemplateHelper 
 {
 	public function name($actor, $linked = true, $attr = array())
